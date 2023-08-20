@@ -6,10 +6,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        String authToken = "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";
+        String authToken = "/";
         String owner = "Larisa-Pomidor";
         String repoName = "TestWorkflow";
-        String commitSha = "20ec40c0ddb0fdb26b41574e3c9f7856211dce86";
+        String commitSha = "5a384e1f72b1a5ca6157b4d466632a77d1b11775";
 
         try {
             GitHub github = new GitHubBuilder().withOAuthToken(authToken).build();
