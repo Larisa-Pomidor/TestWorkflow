@@ -6,10 +6,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        String authToken = "--";
+        String authToken = "888";
         String owner = "Larisa-Pomidor";
         String repoName = "TestWorkflow";
-        String commitSha = "9ab165b15851dfaab5a2af7dff9cd4ad7e7d4be5";
+        String commitSha = "a445a73bf133a92977349c26b3965b2ab2bdbd14";
 
         try {
             GitHub github = new GitHubBuilder().withOAuthToken(authToken).build();
@@ -21,7 +21,6 @@ public class App
             for (GHCommitStatus status : commitStatuses) {
                 System.out.println("Context: " + status.getContext());
                 System.out.println("State: " + status.getState());
-                System.out.println("Description: " + status.getDescription());
                 System.out.println("-------------------");
             }
         } catch (Exception e) {
